@@ -5,10 +5,10 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="page">
+    <header class="page-header">
       <h1 class="visually-hidden">интернет-магазин «Техномарт» </h1>
 <div class="header-top-row">
-  <a>
+  <a href="index.html">
     <img src="img/index-logo.svg" width="300" height="200" alt="Логотип магазина Техномарт">
   </a>
 <span class="search">Поиск по сайту</span>
@@ -24,31 +24,32 @@
 </div>
 <div class="header-contacts">
   <p class="phone">
-    <a>+7 (812) 555-05-55</a>
+    <a href="tel:">+7 (812) 555-05-55</a>
   </p>
-  <p class="adress">
+  <p class="address">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   </p>
 </div>
-<div class="lk-buttons">
-  <div class="lk-top-row">
+<div class="login-area">
+  <div class="login-area-username">
 <span class="name">Равшан Джамшутович</span>
+<a href=""><img class="logout" src="img/iconka.svg"></a>
 </div>
-<div class="lk-bottom-row">
+<div class="login-area-buttons">
 <span class=" ">Мои заказы</span>
 <span class=" ">Личный кабинет</span>
 </div>
 </div>
 </div>
-<nav class="navigation-header">
-  <ul class=" ">
-    <li>Главная</li>
-    <li>Компания</li>
-    <li>Каталог</li>
-    <li>Новости</li>
-    <li>Спецпредложения</li>
-    <li>Доставка</li>
-    <li>Контакты</li>
+<nav class="main-navigation">
+  <ul class="navigation-list">
+    <li class="navigation-item"><a class="navigation-link" href=""> Главная</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Компания</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Каталог</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Новости</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Спецпредложения</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Доставка</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Контакты</a></li>
   </ul>
 </nav>
     </header>
@@ -57,14 +58,14 @@
     <li><a href="index.html"><img src="img/domik.svg" alt="Иконка домик" ></a></li>
     <li><a href="">Каталог</a></li>
     <li><a href="">Инструмент</a></li>
-    <li class="breadcrumbs-current">Перфораторы</li>
+    <li class="current">Перфораторы</li>
   </ul>
 <div class="title">
 <h2>Перфораторы</h2>
 </div>
 
 <section class="catalog">
-  <div class="left-column-filters">
+  <div class="filters">
 <h3>Фильтр:</h3>
 <div class="price-filter">
 <!--Здесь будет фильтр по цене-->
@@ -77,9 +78,19 @@
 </div>
 <span class="button">Показать</span>
   </div>
-<div class="right-column-catalog">
+<div class="catalog-wrap">
   <!--Как оформить верхнюю строку фильтра?-->
-  <ul class="goods-catalog">
+<ul class="catalog-filters-list">
+  <h3 class="catalog-filters-header">Сортировка:</h3>
+  <li class="catalog-filters-item"><a class="catalog-filters-link" href="">По цене </a></li>
+  <li class="catalog-filters-item"><a class="catalog-filters-link" href="">По типу</a></li>
+  <li class="catalog-filters-item"><a class="catalog-filters-link" href="">По функционалу </a></li>
+  <ul class="filters-buttons-list">
+    <li class="filters-buttons-item">up</li>
+    <li class="filters-buttons-item">down</li>
+</ul>
+</ul>
+  <ul class="catalog inner">
 <li>  </li>
 <li>  </li>
 <li><!--Как оформить кнопки внутри товара-->  </li>
@@ -91,34 +102,33 @@
 <li>  </li>
   </ul>
 </div>
-<ul class="pagination-list">
-  <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+<ul class="pagination">
+  <li class="pagination-item current"><a>1</a></li>
   <li class="pagination-item"><a href="#">2</a></li>
   <li class="pagination-item"><a href="#">3</a></li>
-  <li class="pagination-item"><a href="#">Следующая</a></li>
+  <li class="pagination-item next"><a href="#">Следующая</a></li>
 </ul>
 </section>
-<section class="about-item">
+<section class="about">
 <h3>Пара слов о перфораторах</h3>
-<div class="decription">
-<p>
+
+<p  class="description">
 Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
 долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели
 могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном
 ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток
  и ударная дрель.</p>
-</div>
+
 </section>
 
 </main>
 <footer class="main-footer">
-  <section class="blue">
 <div class="top-row-footer">
-  <a>
+  <div class="logo-footer">
     <img src="img/index-logo.svg" width="300" height="200" alt="Логотип магазина Техномарт">
-  </a>
-  <nav class="navigation-footer-top">
+  </div>
+  <nav class="navigation-footer">
     <ul class=" ">
       <li>Компания</li>
       <li>Новости</li>
@@ -128,27 +138,26 @@
     </ul>
   </nav>
 </div>
-<div class="bottom-row-footer">
+<div class="midle-row-footer">
 <div class="contacts-adress">
   <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br>
 +7 (812) 555-05-55</p>
 </div>
-<nav class="navigation-footer-bottom">
-  <ul class=" ">
-    <li>Материалы</li>
-    <li>Техника</li>
-    <li>Инструменты</li>
-    <li>Спецпредложения</li>
+<nav class="navigation-category">
+  <ul class="navigation-category-list">
+    <li class="navigation-category-item">Материалы</li>
+    <li class="navigation-category-item">Техника</li>
+    <li class="navigation-category-item">Инструменты</li>
+    <li class="navigation-category-item">Спецпредложения</li>
   </ul>
 </nav>
 </div>
-</section>
-<section class="darkblue">
-  <p class="footer-copyright">
+<div class="bottom-row-footer">
+  <p class="copyright">
     © 2010–2019 Компания «Техномарт» <br>
 Все права защищены
     </p>
-    <div class="footer-social">
+    <div class="social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -156,16 +165,17 @@
    </ul>
    </div>
 
-   <div class="links">
+   <div class="feedback">
 <p>обратная связь: <br>
   <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-  <p>
+</p>
+</div>
+<div class="develope">
     <p>Разработано- <br>
       <a href="https://htmlacademy.ru">htmlacademy.ru</a>
     </p>
    </div>
-</section>
-
+</div>
 </footer>
   </body>
 </html>

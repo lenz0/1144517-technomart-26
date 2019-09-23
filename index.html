@@ -5,12 +5,12 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="page">
+    <header class="page-header">
       <h1 class="visually-hidden">интернет-магазин «Техномарт» </h1>
 <div class="header-top-row">
-  <a>
+  <div class="logo">
     <img src="img/index-logo.svg" width="300" height="200" alt="Логотип магазина Техномарт">
-  </a>
+  </div>
 <span class="search">Поиск по сайту</span>
 <span class="button">Закладки</span>
 <span class="button">Корзина</span>
@@ -24,9 +24,9 @@
 </div>
 <div class="header-contacts">
   <p class="phone">
-    <a>+7 (812) 555-05-55</a>
+    <a href="tel:">+7 (812) 555-05-55</a>
   </p>
-  <p class="adress">
+  <p class="address">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
   </p>
 </div>
@@ -35,90 +35,85 @@
 <span class=" ">Регистрация</span>
 </div>
 </div>
-<nav class="navigation-header">
-  <ul class=" ">
-    <li>Главная</li>
-    <li>Компания</li>
-    <li>Каталог</li>
-    <li>Новости</li>
-    <li>Спецпредложения</li>
-    <li>Доставка</li>
-    <li>Контакты</li>
+<nav class="main-navigation">
+  <ul class="navigation-list">
+    <li class="navigation-item"><a class="navigation-link" href=""> Главная</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Компания</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Каталог</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Новости</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Спецпредложения</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Доставка</a></li>
+    <li class="navigation-item"><a class="navigation-link" href="">Контакты</a></li>
   </ul>
 </nav>
     </header>
 
 <main class="page-content">
-  <section class="catalog">
+  <section class="menu">
     <h2 class="visually-hidden">Каталог товаов и услуг</h2>
-    <div class="top-row-1">
-      <span class="materials"> <a href=" "> Материалы</a></span>
-      <span class="instruments"> <a href=" "> Инструменты</a></span>
-      <span class="technics "> <a href=" ">Техника</a></span>
+    <div class="catalog-top-row-">
+      <span class="item materials"> <a href=" "> Материалы</a></span>
+      <span class="item tools"> <a href=" "> Инструменты</a></span>
+      <span class="item technics "> <a href=" ">Техника</a></span>
     </div>
-    <div class="bottom-row-1">
+    <div class="catalog-bottom-row-">
 <span class="slider"> Здесь будет слайдер</span>
-<span class="sales "> <a href=" ">Скидки</a></span>
-<span class="delivery"> <a href=" ">Доставка</a></span>
+<span class="item sales "> <a href=" ">Скидки</a></span>
+<span class="item delivery"> <a href=" ">Доставка</a></span>
     </div>
   </section>
 
-<section class="popular-goods">
-  <div class="section-title">
+<section class="goods">
+  <div class="goods-header">
 <h2>Популярные товары:</h2>
 <a href=""><span class="button">Все популярные товары<span> </a>
   </div>
-<ul class="popular-goods-catalog">
-  <li><h3>Перфоратор BOSCH
+<ul class="catalog">
+  <li class="catalog-item"><h3>Перфоратор BOSCH
 BFG 9000</h3>
 <p class="old-price">32500</p>
 <p class="new-price">25500</p> </li>
-  <li><h3>Перфоратор BOSCH
+  <li class="catalog-item"><h3>Перфоратор BOSCH
 BFG 3000</h3>
 <p class="old-price">22500</p>
 <p class="new-price">15500</p> </li>
-  <li><h3>Перфоратор BOSCH
+  <li class="catalog-item"><h3>Перфоратор BOSCH
 BFG 6000</h3>
 <p class="old-price">30500</p>
 <p class="new-price">25500</p> </li>
-  <li><h3>Перфоратор BOSCH
+  <li class="catalog-item"><h3>Перфоратор BOSCH
 BFG 2000</h3>
 <p class="old-price"> </p>
 <p class="new-price">12500</p> </li>
 </ul>
 </section>
 
-<section class="popular-vendors">
-  <div class="section-title">
+<section class="vendors">
+  <div class="vendors-header">
     <h2>Популярные производители:</h2>
     <a href=""><span class="button">Все производители<span> </a>
       </div>
-      <div class="top-row-vendors">
-        <ul class="popular-vendors-catalog">
-          <li>BOSCH</li>
-          <li>Makita</li>
-          <li>DeWALT</li>
-          <li>Интерскол</li>
+        <ul class="vendors-list">
+          <li class="vendors-item"><a class="vendors-link">BOSCH</a></li>
+          <li class="vendors-item"><a class="vendors-link">Makita</a></li>
+          <li class="vendors-item"><a class="vendors-link">DeWALT</a></li>
+          <li class="vendors-item"><a class="vendors-link">Интерскол</a></li>
+          <li class="vendors-item"><a class="vendors-link">Hitachi</a></li>
+          <li class="vendors-item"><a class="vendors-link">LG</a></li>
+          <li class="vendors-item"><a class="vendors-link">AEG</a></li>
+          <li class="vendors-item"><a class="vendors-link">metabo</a></li>
         </ul>
-      </div>
-      <div class="bottom-row-vendors">
-        <ul class="popular-vendors-catalog">
-          <li>Hitachi</li>
-          <li>LG</li>
-          <li>AEG</li>
-          <li>metabo</li>
-        </ul>
-      </div>
+
 </section>
 
 <section class="services">
-  <div class="services-title">
+  <div class="services-header">
 <h2> Сервисы</h2>
 <p>
 Хороший интернет-магазин отличается от плохого не только ценами!
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
   </div>
-  <div class="services-buttons">
+  <div class="services">
     <span class="delivery-button"> <!--здесь будет:
 
 Мы с удовольствием доставим ваш товар прямо
@@ -152,10 +147,10 @@ BFG 2000</h3>
    <p>
 Мы можем доставить ваш товар в самые отдаленные точки России!
 Техномарт работает со многими транспортными компаниями: </p>
-<ul class="companies">
-<li>	Деловые линии</li>
-<li>	Автотрейдинг</li>
-<li>	ЖелДорЭкспедиция</li>
+<ul class="companies-list">
+<li class="companies-item">	Деловые линии</li>
+<li class="companies-item">	Автотрейдинг</li>
+<li class="companies-item">	ЖелДорЭкспедиция</li>
 </ul>
 <a href=""><span class="button">Подробнее о компании<span> </a>
   </div>
@@ -168,17 +163,16 @@ BFG 2000</h3>
   <a href="">
     <img src="img/map.jpg" alt="Карта с адресом магазина">
   </a>
-  <a href=""><span class="button">Заблудились? Напишите нам!<span> </a>
+  <a href="">Заблудились? Напишите нам! </a>
     </div>
 </section>
 </main>
 <footer class="main-footer">
-  <section class="blue">
 <div class="top-row-footer">
-  <a>
+  <div class="logo-footer">
     <img src="img/index-logo.svg" width="300" height="200" alt="Логотип магазина Техномарт">
-  </a>
-  <nav class="navigation-footer-top">
+  </div>
+  <nav class="navigation-footer">
     <ul class=" ">
       <li>Компания</li>
       <li>Новости</li>
@@ -188,27 +182,26 @@ BFG 2000</h3>
     </ul>
   </nav>
 </div>
-<div class="bottom-row-footer">
+<div class="midle-row-footer">
 <div class="contacts-adress">
   <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br>
 +7 (812) 555-05-55</p>
 </div>
-<nav class="navigation-footer-bottom">
-  <ul class=" ">
-    <li>Материалы</li>
-    <li>Техника</li>
-    <li>Инструменты</li>
-    <li>Спецпредложения</li>
+<nav class="navigation-category">
+  <ul class="navigation-category-list">
+    <li class="navigation-category-item">Материалы</li>
+    <li class="navigation-category-item">Техника</li>
+    <li class="navigation-category-item">Инструменты</li>
+    <li class="navigation-category-item">Спецпредложения</li>
   </ul>
 </nav>
 </div>
-</section>
-<section class="darkblue">
-  <p class="footer-copyright">
+<div class="bottom-row-footer">
+  <p class="copyright">
     © 2010–2019 Компания «Техномарт» <br>
 Все права защищены
     </p>
-    <div class="footer-social">
+    <div class="social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -216,16 +209,17 @@ BFG 2000</h3>
    </ul>
    </div>
 
-   <div class="links">
+   <div class="feedback">
 <p>обратная связь: <br>
   <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-  <p>
+</p>
+</div>
+<div class="develope">
     <p>Разработано- <br>
       <a href="https://htmlacademy.ru">htmlacademy.ru</a>
     </p>
    </div>
-</section>
-
+</div>
 </footer>
   </body>
 </html>
